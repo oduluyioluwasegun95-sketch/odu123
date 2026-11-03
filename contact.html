@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contact Sunran Estate about buying, selling or renting property."
+    />
+    <title>Contact Us | Sunran Estate</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="announcement">
+      <span>Find your perfect property with Sunran Estate.</span
+      ><a href="contact.html">Speak to an agent →</a>
+    </div>
+    <header class="site-header">
+      <nav class="navbar container">
+        <a class="brand" href="index.html">SUNRAN<span>ESTATE</span></a
+        ><button
+          class="menu-toggle"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="properties.html">Properties</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a class="active" href="contact.html">Contact</a></li>
+          <li><a href="login.html">Log in</a></li>
+          <li>
+            <a href="favourites.html"
+              >Favourites <span class="fav-count">0</span></a
+            >
+          </li>
+        </ul>
+        <a class="btn btn-small nav-cta" href="contact.html">Get in touch</a>
+      </nav>
+    </header>
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <span class="eyebrow">WE'RE HERE TO HELP</span>
+          <h1>Let's talk property.</h1>
+          <p>
+            Tell us what you need and a member of our team will be in touch.
+          </p>
+        </div>
+      </section>
+      <section class="section container contact-layout">
+        <div class="contact-info">
+          <span class="eyebrow">CONTACT DETAILS</span>
+          <h2>Start a conversation.</h2>
+          <p class="muted">
+            Reach out about a property, arrange an inspection or ask us a
+            question.
+          </p>
+          <div class="contact-detail">
+            <span>PHONE</span><a href="tel:+2348000000000">+234 800 000 0000</a>
+          </div>
+          <div class="contact-detail">
+            <span>EMAIL</span
+            ><a href="mailto:hello@sunranestate.com">hello@sunranestate.com</a>
+          </div>
+          <div class="contact-detail">
+            <span>OFFICE</span>
+            <p>Lagos, Nigeria — replace with verified address.</p>
+          </div>
+          <a
+            class="btn whatsapp-link"
+            href="https://wa.me/2349057170103"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Chat on WhatsApp ↗</a
+          >
+        </div>
+        <form class="contact-form" id="contactForm">
+          <h2>Send an enquiry</h2>
+          <div class="form-row">
+            <label
+              >Full name<input
+                name="name"
+                required
+                placeholder="Your full name" /></label
+            ><label
+              >Email address<input
+                name="email"
+                type="email"
+                required
+                placeholder="you@example.com"
+            /></label>
+          </div>
+          <div class="form-row">
+            <label
+              >Phone number<input
+                name="phone"
+                type="tel"
+                placeholder="+234..." /></label
+            ><label
+              >I'm interested in<select name="interest" required>
+                <option value="">Choose an option</option>
+                <option>Buying a property</option>
+                <option>Renting a property</option>
+                <option>Selling a property</option>
+                <option>Property investment</option>
+                <option>Other enquiry</option>
+              </select></label
+            >
+          </div>
+          <label
+            >Message<textarea
+              name="message"
+              rows="5"
+              required
+              placeholder="Tell us how we can help..."
+            ></textarea></label
+          ><button class="btn" type="submit">Send message →</button>
+          <p class="form-message" id="contactMessage" role="status"></p>
+          <small class="muted"
+            >Demo form: connect a backend or form service to receive
+            submissions.</small
+          >
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand footer-brand" href="index.html"
+            >SUNRAN<span>ESTATE</span></a
+          >
+          <p>Thoughtful property guidance.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <a href="properties.html">Properties</a
+          ><a href="about.html">About us</a>
+        </div>
+        <div>
+          <h4>Get in touch</h4>
+          <a href="mailto:hello@sunranestate.com">hello@sunranestate.com</a
+          ><a href="tel:+2348000000000">+234 800 000 0000</a>
+        </div>
+        <div>
+          <h4>Office</h4>
+          <p>Lagos, Nigeria</p>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© <span class="year"></span> Sunran Estate.</span>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+  </body>
+</html>

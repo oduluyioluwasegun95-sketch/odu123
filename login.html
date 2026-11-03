@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Log in to your Sunran Estate account." />
+    <title>Log in | Sunran Estate</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="announcement">
+      <span>Find your perfect property with Sunran Estate.</span
+      ><a href="contact.html">Speak to an agent →</a>
+    </div>
+    <header class="site-header">
+      <nav class="navbar container">
+        <a class="brand" href="index.html">SUNRAN<span>ESTATE</span></a>
+        <button
+          class="menu-toggle"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="properties.html">Properties</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <a class="active" href="login.html" aria-current="page">Log in</a>
+          </li>
+          <li>
+            <a href="favourites.html"
+              >Favourites <span class="fav-count">0</span></a
+            >
+          </li>
+        </ul>
+        <a class="btn btn-small nav-cta" href="contact.html">Get in touch</a>
+      </nav>
+    </header>
+    <main class="login-page">
+      <section class="login-panel">
+        <div
+          class="login-image"
+          role="img"
+          aria-label="A warmly lit contemporary home interior"
+        >
+          <a class="brand login-image-brand" href="index.html"
+            >SUNRAN<span>ESTATE</span></a
+          >
+          <div class="login-image-copy">
+            <span class="eyebrow">WELCOME HOME</span>
+            <h1>Your next chapter<br />starts here.</h1>
+            <p>Sign in to continue exploring a place that feels like yours.</p>
+          </div>
+        </div>
+        <div class="login-content">
+          <div class="login-form-wrap">
+            <a class="login-back text-link" href="index.html">← Back to home</a>
+            <span class="eyebrow">YOUR SUNRAN ACCOUNT</span>
+            <h2>Welcome back.</h2>
+            <p class="muted login-intro">
+              Log in to pick up where you left off.
+            </p>
+            <form id="loginForm" class="login-form">
+              <label for="loginEmail">Email address</label>
+              <input
+                id="loginEmail"
+                name="email"
+                type="email"
+                autocomplete="username"
+                placeholder="you@example.com"
+                required
+              />
+              <div class="login-password-label">
+                <label for="loginPassword">Password</label>
+                <a href="contact.html">Forgot password?</a>
+              </div>
+              <div class="password-field">
+                <input
+                  id="loginPassword"
+                  name="password"
+                  type="password"
+                  autocomplete="current-password"
+                  placeholder="Enter your password"
+                  required
+                />
+                <button
+                  id="togglePassword"
+                  type="button"
+                  aria-label="Show password"
+                  aria-pressed="false"
+                >
+                  Show
+                </button>
+              </div>
+              <label class="remember-option"
+                ><input name="remember" type="checkbox" />
+                <span>Remember me</span></label
+              >
+              <button class="btn login-submit" type="submit">
+                Log in <span aria-hidden="true">→</span>
+              </button>
+              <p
+                class="login-message"
+                id="loginMessage"
+                role="status"
+                aria-live="polite"
+              ></p>
+            </form>
+            <p class="login-signup">
+              New to Sunran Estate? <a href="signup.html">Create an account</a>
+            </p>
+            <p class="login-demo-note">
+              Demo page: sign-in is not connected to an account service yet.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer login-footer">
+      <div class="container footer-bottom">
+        <span
+          >© <span class="year"></span> Sunran Estate. All rights
+          reserved.</span
+        ><a href="contact.html">Need help? Contact us</a>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/login.js"></script>
+  </body>
+</html>

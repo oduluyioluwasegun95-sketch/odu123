@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Browse homes, apartments, land and commercial properties."
+    />
+    <title>Properties | Sunran Estate</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="announcement">
+      <span>Find your perfect property with Sunran Estate.</span
+      ><a href="contact.html">Speak to an agent →</a>
+    </div>
+    <header class="site-header">
+      <nav class="navbar container">
+        <a class="brand" href="index.html">SUNRAN<span>ESTATE</span></a
+        ><button
+          class="menu-toggle"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="properties.html">Properties</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="login.html">Log in</a></li>
+          <li>
+            <a href="favourites.html"
+              >Favourites <span class="fav-count">0</span></a
+            >
+          </li>
+        </ul>
+        <a class="btn btn-small nav-cta" href="contact.html">Get in touch</a>
+      </nav>
+    </header>
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <span class="eyebrow">FIND YOUR NEXT PROPERTY</span>
+          <h1>Explore our properties</h1>
+          <p>Discover homes, apartments, land and commercial spaces.</p>
+        </div>
+      </section>
+      <section class="section container">
+        <form class="filter-panel" id="propertyFilters">
+          <label
+            >Search location<input
+              type="search"
+              name="location"
+              id="filterLocation"
+              placeholder="Enter a location"
+          /></label>
+          <label
+            >Property type<select name="type" id="filterType">
+              <option value="">All types</option>
+              <option>House</option>
+              <option>Apartment</option>
+              <option>Land</option>
+              <option>Commercial</option>
+            </select></label
+          >
+          <label
+            >Maximum price<select name="maxPrice" id="filterMax">
+              <option value="">No maximum</option>
+              <option value="50000000">₦50 million</option>
+              <option value="100000000">₦100 million</option>
+              <option value="200000000">₦200 million</option>
+              <option value="500000000">₦500 million</option>
+            </select></label
+          >
+          <label
+            >Bedrooms<select name="bedrooms" id="filterBeds">
+              <option value="">Any</option>
+              <option value="1">1+</option>
+              <option value="2">2+</option>
+              <option value="3">3+</option>
+              <option value="4">4+</option>
+            </select></label
+          >
+          <label
+            >Sort by<select name="sort" id="filterSort">
+              <option value="featured">Featured</option>
+              <option value="price-low">Price: low to high</option>
+              <option value="price-high">Price: high to low</option>
+              <option value="newest">Newest</option>
+            </select></label
+          >
+          <button class="btn" type="submit">Apply filters →</button>
+        </form>
+        <div class="results-heading">
+          <p id="resultsCount" class="muted">Loading properties...</p>
+          <button class="reset-btn" id="resetFilters" type="button">
+            Reset filters
+          </button>
+        </div>
+        <div class="property-grid" id="allProperties"></div>
+        <p class="empty-state hidden" id="noResults">
+          No properties match your search. Try changing your filters.
+        </p>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand footer-brand" href="index.html"
+            >SUNRAN<span>ESTATE</span></a
+          >
+          <p>Thoughtful property guidance. Spaces for every next chapter.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <a href="properties.html">Properties</a
+          ><a href="about.html">About us</a
+          ><a href="favourites.html">Favourites</a>
+        </div>
+        <div>
+          <h4>Get in touch</h4>
+          <a href="contact.html">Contact</a
+          ><a href="mailto:hello@sunranestate.com">hello@sunranestate.com</a>
+        </div>
+        <div>
+          <h4>Office</h4>
+          <p>Lagos, Nigeria</p>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span
+          >© <span class="year"></span> Sunran Estate. All rights
+          reserved.</span
+        >
+      </div>
+    </footer>
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/properties.js"></script>
+  </body>
+</html>
